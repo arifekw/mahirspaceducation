@@ -1,0 +1,41 @@
+MAHIR SPACE — REVISI 30 SEPTEMBER 2026
+
+Buka index.html untuk melihat website, tutor.html untuk halaman tutor.
+Semua aset disertakan dalam folder assets. Tidak memerlukan build atau database.
+
+PERUBAHAN
+- Guru/pengajar menjadi tutor.
+- Online dan offline sesuai ketersediaan tanggal, tutor, serta lokasi.
+- FAQ pelajaran sekolah diperbarui.
+- Pilihan cara belajar masuk ke ringkasan pesan WhatsApp.
+- Hero menjadi panel interaktif Math / English / Digital.
+- Testimoni rekaan diganti bagian tujuan belajar.
+- Foto AI kegiatan dan profil rancangan Risa/David tidak ditampilkan di halaman publik.
+  Aset aslinya tetap disimpan. Tambahkan profil setelah identitas, kualifikasi,
+  status tutor, dan foto asli dikonfirmasi. Testimoni memerlukan ulasan asli.
+- Kontak tetap WhatsApp +62 895-1011-8463.
+
+STATUS HOSTING
+Belum dipublikasikan. Nama yang diminta: mahirspaceducation.vercel.app.
+Ketersediaan subdomain belum diperiksa atau dipesan.
+Vercel Hobby hanya untuk penggunaan pribadi nonkomersial:
+https://vercel.com/docs/plans/hobby
+Website ini menawarkan jasa berbayar; gunakan paket Vercel yang mengizinkan
+penggunaan komersial, atau pilih penyedia hosting lain yang sesuai.
+Tidak ada paket berbayar yang diaktifkan.
+
+PERSIAPAN VERCEL
+vercel.json sudah disertakan. Untuk proyek statis gunakan framework Other,
+tanpa build command, dengan output folder saat ini (.).
+Setelah akun/paket sesuai, unggah folder ini melalui alur deployment Vercel
+atau hubungkan repository Git. Nama proyek: mahirspaceducation.
+
+CARA EDIT
+Edit teks pada index.html dan tutor.html menggunakan editor kode.
+Harga ada pada konstanta prices di script index.html.
+Untuk pembaruan teratur, simpan sumber di repository Git dan hubungkan ke Vercel.
+Perubahan sumber perlu di-deploy kembali agar muncul di website live.
+
+PEMERIKSAAN
+Sintaks JavaScript dan keberadaan semua gambar yang direferensikan telah diperiksa.
+Uji browser visual belum berhasil karena browser tidak tersedia di lingkungan ini.
