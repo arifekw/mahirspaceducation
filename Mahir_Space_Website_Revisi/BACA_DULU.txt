@@ -1,41 +1,42 @@
-MAHIR SPACE — REVISI 30 SEPTEMBER 2026
+MAHIR SPACE — REVISI LANDING PAGE 30 SEPTEMBER 2026
 
-Buka index.html untuk melihat website, tutor.html untuk halaman tutor.
-Semua aset disertakan dalam folder assets. Tidak memerlukan build atau database.
+UPDATE KE GITHUB / VERCEL
+1. Ekstrak ZIP ini. Di dalamnya ada folder Mahir_Space_Website_Revisi.
+2. Buka repositori GitHub arifekw/mahirspaceducation, lalu MASUK ke folder
+   Mahir_Space_Website_Revisi yang sudah ada.
+3. Add file > Upload files. Unggah ISI folder revisi (index.html, tutor.html,
+   promo-config.js, promo.js, assets, vercel.json, dan file lainnya).
+   Jangan unggah folder pembungkus lagi agar tidak membuat folder bertingkat.
+4. Commit perubahan ke main. Tunggu deployment Vercel yang terbaru berstatus Ready.
+5. Root Directory Vercel tetap Mahir_Space_Website_Revisi.
 
-PERUBAHAN
-- Guru/pengajar menjadi tutor.
-- Online dan offline sesuai ketersediaan tanggal, tutor, serta lokasi.
-- FAQ pelajaran sekolah diperbarui.
-- Pilihan cara belajar masuk ke ringkasan pesan WhatsApp.
-- Hero menjadi panel interaktif Math / English / Digital.
-- Testimoni rekaan diganti bagian tujuan belajar.
-- Foto AI kegiatan dan profil rancangan Risa/David tidak ditampilkan di halaman publik.
-  Aset aslinya tetap disimpan. Tambahkan profil setelah identitas, kualifikasi,
-  status tutor, dan foto asli dikonfirmasi. Testimoni memerlukan ulasan asli.
-- Kontak tetap WhatsApp +62 895-1011-8463.
+REVISI
+- CTA konsultasi gratis + gratis 1 jam pertemuan, termasuk pesan WhatsApp.
+- Harga ekuivalen per jam pada kartu paket, formulir, dan Cakap Digital.
+- Nominal total paket tidak ditampilkan. Tarif dasar dan jumlah sesi tidak diubah.
+- Intensif berupa rentang karena jumlah sesi 10–15. Total biaya perlu
+  diinformasikan saat konsultasi sebelum pembayaran.
+- Pesan pembuka berfokus pada fondasi masa depan, dilanjutkan masalah belajar
+  dan cara tutor membantu. Warna, aset, kuis, serta struktur lainnya dipertahankan.
 
-STATUS HOSTING
-Belum dipublikasikan. Nama yang diminta: mahirspaceducation.vercel.app.
-Ketersediaan subdomain belum diperiksa atau dipesan.
-Vercel Hobby hanya untuk penggunaan pribadi nonkomersial:
-https://vercel.com/docs/plans/hobby
-Website ini menawarkan jasa berbayar; gunakan paket Vercel yang mengizinkan
-penggunaan komersial, atau pilih penyedia hosting lain yang sesuai.
-Tidak ada paket berbayar yang diaktifkan.
+PROMO, HARGA CORET, DAN KUOTA
+Buka promo-config.js. Fitur berikut disiapkan tetapi default-nya nonaktif:
+- enabled: true mengaktifkan kampanye setelah endsAt diisi waktu akhir yang nyata.
+- endsAt: tanggal/jam ISO 8601 dengan zona +07:00. Timer tidak reset ketika
+  halaman dimuat ulang, dan blok kampanye disembunyikan setelah berakhir.
+- previousPackagePrices: isi HARGA TOTAL SEBELUMNYA yang benar-benar pernah
+  berlaku untuk paket sebanding. Format objek berisi array empat angka pada
+  key "1on1" dan "grup". Urutan Reguler, Intensif, Persiapan Ujian, Cakap Digital.
+  Website menghitung sendiri harga coret per jam. Harga lama harus lebih tinggi.
+- quotaEndpoint: URL API kuota dari sistem pendaftaran Anda. API harus
+  mengembalikan JSON {"remaining": bilangan bulat >= 0, "updatedAt": waktu ISO}.
+  Jika lintas domain, endpoint harus mengizinkan CORS dari situs Anda.
+  Kuota diperbarui tiap 30 detik. Data berusia lebih dari 2 menit atau permintaan
+  gagal disembunyikan. Website tidak mengurangi kuota sendiri.
+  Backend/API kuota belum tersedia dalam paket statis ini: perlu dihubungkan
+  ke catatan pendaftaran yang benar. Mengisi angka acak bukan data real-time.
 
-PERSIAPAN VERCEL
-vercel.json sudah disertakan. Untuk proyek statis gunakan framework Other,
-tanpa build command, dengan output folder saat ini (.).
-Setelah akun/paket sesuai, unggah folder ini melalui alur deployment Vercel
-atau hubungkan repository Git. Nama proyek: mahirspaceducation.
-
-CARA EDIT
-Edit teks pada index.html dan tutor.html menggunakan editor kode.
-Harga ada pada konstanta prices di script index.html.
-Untuk pembaruan teratur, simpan sumber di repository Git dan hubungkan ke Vercel.
-Perubahan sumber perlu di-deploy kembali agar muncul di website live.
-
-PEMERIKSAAN
-Sintaks JavaScript dan keberadaan semua gambar yang direferensikan telah diperiksa.
-Uji browser visual belum berhasil karena browser tidak tersedia di lingkungan ini.
+VERIFIKASI
+Sintaks JavaScript dan jalur aset diperiksa. Enam kombinasi program/format
+serta delapan ringkasan paket/format lolos pemeriksaan logika harga per jam.
+Pemeriksaan tampilan langsung dalam browser belum tersedia pada lingkungan ini.
